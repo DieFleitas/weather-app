@@ -1,13 +1,14 @@
-import './App.css';
+import "./App.css";
+import Search from "./components/Search/Search";
 
 function App() {
+  const handleOnSearchChange = (searchData) => {
+    return;
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+    <div className="container">
+      <Search onSearchChange={handleOnSearchChange} />
     </div>
   );
 }
